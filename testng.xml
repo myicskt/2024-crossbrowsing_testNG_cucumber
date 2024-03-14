@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Suite">
+    
+    <test name="Cross Browser Test">
+    <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runner.TestRunner"/>
+            <class name="step_definations.StepByStep"/>
+        </classes>
+    </test>
+    
+     <test name="Cross Browser Test 2">
+    <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="runner.TestRunner"/>
+            <class name="step_definations.StepByStep"/>
+        </classes>
+    </test>
+    
+</suite>
